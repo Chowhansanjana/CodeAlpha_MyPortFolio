@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(270deg, #a1c4fd, #c2e9fb);
+      background-size: 400% 400%;
+      animation: gradientShift 15s ease infinite;
+      line-height: 1.6;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    header {
+      background: #1e1e1e;
+      color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #00ccff;
+    }
+
+    section {
+      max-width: 900px;
+      margin: auto;
+      padding: 60px 20px;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about p, .contact p {
+      font-size: 18px;
+      color: #444;
+      text-align: center;
+    }
+
+    .skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .skills li {
+      background: #eee;
+      padding: 10px 20px;
+      border-radius: 5px;
+      transition: all 0.3s;
+    }
+
+    .skills li:hover {
+      background: #00ccff;
+      color: white;
+    }
+
+    .resume a {
+      display: inline-block;
+      margin-top: 10px;
+      background: #00ccff;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .resume a:hover {
+      background: #009ec3;
+    }
+
+    footer {
+      background: #1e1e1e;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm <strong>Sanjana</strong>, a passionate front-end developer who loves crafting beautiful, responsive websites. I enjoy exploring new technologies and solving real-world problems through code.</p>
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>React</li>
+      <li>Git & GitHub</li>
+      <li>Responsive Design</li>
+    </ul>
+  </section>
+
+  <section id="resume" class="resume">
+    <h2>Resume</h2>
+    <p style="text-align: center;">Download my resume below:</p>
+    <p style="text-align: center;">
+      <a href="#" onclick="alert('Replace this with your actual resume link.')">Download Resume</a>
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: sanjana@example.com</p>
+    <p>LinkedIn: <a href="https://linkedin.com" target="_blank">linkedin.com/in/sanjana</a></p>
+    <p>GitHub: <a href="https://github.com" target="_blank">github.com/sanjana</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Sanjana | Portfolio</p>
+  </footer>
+
+</body>
+</html>
